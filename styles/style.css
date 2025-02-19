@@ -2,4 +2,282 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color);
+}
+
+    /* ---------
+    STYLE FOR ALL
+      --------- */
+
+.text-decor {
+  background-color: var(--text-decor);
+  color: var(--header-text-color);
+  font-size: var(--regular-font-size);
+  font-weight: var(--bold-font-weight);
+  line-height: var(--large-line-height);
+}
+
+h2, .text-decor {
+  margin-block-end: 10px;
+}
+
+/* 1) для футера задать позитион релевайт для уголков */
+
+  /*--------
+    HEADER  
+  --------*/
+
+.header {
+  padding: 10px;
+  /* height: 668px; */
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  justify-items: end;
+  align-items: center;
+}
+
+/* Уголочки сверху и снизу */ 
+
+.decorated-zone::after {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.decorated-zone::before {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+}
+
+/* Надпись REC в темной теме */
+
+.header__dark-theam-REC {
+  position: absolute;
+  font-family: var(--font-family), Arial, Helvetica, sans-serif;
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 25px;
+  top: 12px;
+  right: 72px;
+}
+
+.header__dark-theam-REC::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-color);
+  margin-block-start: 7px;
+  margin-left: 43px;
+  border-radius: 50%;
+}
+
+.header__dark-theam-REC::before {
+  content: "REC";
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 18px;
+}
+
+
+.header__theme-menu {
+  min-height: 98px;
+  margin-right: 8px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+} 
+
+.header__theme-menu-button{
+  font-size: 18px;
+  font-family: var(--font-family), Arial, Helvetica, sans-serif;
+  color: var(--accent-color);
+  border: none;
+  background-color: transparent;
+  text-transform: lowercase;
+}
+
+.header__titel-div {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: start;
+  /* align-self: end; */
+}
+
+.header__titel {
+  /* Декоративное смещение h1 заголовка (заезд за сетку шапки слева) 
+  можно сделать с помощью отрицательного левого маргина,
+  но это уже не сетка */
+  min-height: 192px;
+  /* word-break: normal;   */
+  /* justify-self: start; */
+  text-transform: lowercase;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-family: var(--font-family), Arial, Helvetica, sans-serif;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 95px;
+  /* line-height: var(--small-font-size); */
+  color: var(--titel-color);
+}
+
+.header__text-div {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.header__text {
+  font-family: var(--font-family), Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--header-text-color);
+  min-height: 117px;
+  max-width: 480px;
+  /* width: clamp((100vw - 20px), 480px, (100vw / 2)); */
+}
+
+@media (width >= 768px) {
+  .header {
+    padding: 20px;
+  }
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+  /* .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
+  }
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  } */
+}
+
+@media (width >= 1024px) {
+  .header__text {
+  }
+}
+
+
+
+
+
+
+
+  /*--------
+     MAIN  
+  --------*/
+
+main {
+  display: grid;
+  gap: 30px;
+  margin-block-start: 40px;
+  margin-block-end: 40px;
+}
+
+section {
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+}
+
+.section { 
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+  
+.section__title {
+  margin-block-end: 20px;
+  font-family: var(--font-family), Arial, Helvetica, sans-serif;
+  color: var(--accent-color);
+  font-size: var(--regular-font-size);
+  font-weight: var(--bold-font-weight);
+  line-height: var(--large-line-height);
+}
+
+.article__text {
+  margin-block-end: 20px;
+  color: var(--text-color);
+  font-size: var(--regular-font-size);
+  font-weight: var(--regular-font-weight);
+  line-height: var(--large-line-height);
+}
+
+.article__pic {
+  display: grid;
+  gap: 10px;
+}
+
+.images {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* .main__section-why .artcile-list {
+  grid-column: span 2;
+} */
+  
+/* .main__section-what .section__title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+} */
+  
+/* .main__section-what .artcile-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+} */
+
+
+  /*------- 
+    FOOTER 
+   -------*/
+
+footer {
+  height: 668px;
+  min-height: 100vh;
+  display: grid;
+  position: relative;
+}
+
+.footer__pseudo-h1 {
+  /* height: 375px; */
+  justify-self: center;
+  align-self: center;
+  line-height: normal;
+}
+
+.footer__pseudo-h1-text {
+  text-transform: lowercase;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-family: var(--font-family), Arial, Helvetica, sans-serif;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 95px;
+  /* line-height: var(--small-font-size); */
+  color: var(--titel-color);
 }
