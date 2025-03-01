@@ -11,14 +11,46 @@
   */
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: #000028;
+  /* COLORS */
+  --titel-color: #FFC2E6;
+  --text-decor: #353430;
+  --accent-color: #FF8DCB;
+  --text-color: #353430;
+  --h2-color: #353430;
+  /* FONTS */
+  --font-family: 'IBM Plex Mono';
+  --regular-font-size: 18px;
+  --small-font-size: 15px;
+  --bold-font-weight: 700;
+  --regular-font-weight: 400;
+  --large-line-height: 23px;
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  .header__dark-theam-REC {
+    display: none;
+}
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(../images/cover-image-light.png);
+    /* ДУБЛИРОВАТЬ ИЗ 
+    :root.theme-light { */
+    --bg-color: #000028;
+    /* COLORS */
+    --titel-color: #FFC2E6;
+    --text-decor: #353430;
+    --accent-color: #FF8DCB;
+    --text-color: #353430;
+    --h2-color: #353430;
+    /* FONTS */
+    --font-family: 'IBM Plex Mono';
+    --regular-font-size: 18px;
+    --small-font-size: 15px;
+    --bold-font-weight: 700;
+    --regular-font-weight: 400;
+    --large-line-height: 23px;
   }
 }
