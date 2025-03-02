@@ -30,7 +30,7 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
   .header__dark-theam-REC {
     display: none;
-}
+  }
 }
 
 @media (prefers-color-scheme: light) {

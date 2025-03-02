@@ -22,17 +22,12 @@
   font-weight: var(--bold-font-weight);
 }
 
-/* h2, .text-decor {
-  margin-block-end: 10px;
-} */
-
   /*--------
     HEADER  
   --------*/
 
 .header {
   padding: 10px;
-  /* height: 668px; */
   min-height: 100vh;
   position: relative;
   display: grid;
@@ -70,10 +65,8 @@
 
 .header__dark-theam-REC {
   position: absolute;
-  /* font-family: var(--font-family), Arial, Helvetica, sans-serif; */
   color: var(--accent-color);
   font-size: var(--regular-font-size);
-  /* line-height: 25px; */
   top: 10px;
   right: 71px;
 }
@@ -99,10 +92,7 @@
 
 
 .header__theme-menu {
-  /* min-height: 98px; */
   margin-inline-end: 3px;
-  /* grid-row-start: 1;
-  grid-row-end: 2; */
 }
 
 .header__theme-menu-list {
@@ -141,43 +131,23 @@
 }
 
 .header__titel-div {
-  /* grid-row-start: 2;
-  grid-row-end: 3; */
   justify-self: start;
-  /* align-self: end; */
 }
 
 .header__titel {
-  /* Декоративное смещение h1 заголовка (заезд за сетку шапки слева) 
-  можно сделать с помощью отрицательного левого маргина,
-  но это уже не сетка */
-  /* min-height: 192px; */
-  /* word-break: normal;   */
   justify-self: start;
   text-transform: lowercase;
   text-shadow: 4px 4px 0 var(--accent-color);
-  /* font-family: var(--font-family), Arial, Helvetica, sans-serif; */
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 96px;
-  /* line-height: var(--small-font-size); */
   color: var(--titel-color);
 }
 
-.header__text-div {
-  /* grid-row-start: 3;
-  grid-row-end: 4; */
-}
-
 .header__text {
-  /* font-family: var(--font-family), Arial, Helvetica, sans-serif; */
   font-style: normal;
   font-weight: var(--bold-font-weight);
   font-size: var(--regular-font-size);
-  /* line-height: 23px; */
   color: var(--text-decor);
-  /* min-height: 117px; */
-  /* max-width: 480px; */
-  /* width: clamp((100vw - 20px), 480px, (100vw / 2)); */
 }
 
   /*--------
@@ -200,16 +170,13 @@ main {
   
 .section__title {
   margin-block-end: 20px;
-  /* font-family: var(--font-family), Arial, Helvetica, sans-serif; */
   color: var(--h2-color);
   font-size: var(--regular-font-size);
   font-weight: var(--bold-font-weight);
-  /* line-height: var(--large-line-height); */
 }
 
 .article__text {
   margin-block-end: 20px;
-  /* font-family: var(--font-family), Arial, Helvetica, sans-serif; */
   color: var(--text-color);
   font-size: var(--regular-font-size);
   font-weight: var(--regular-font-weight);
@@ -218,7 +185,6 @@ main {
 
 .main__text-titel {
   margin-block-end: 10px;
-  /* font-family: var(--font-family), Arial, Helvetica, sans-serif; */
   font-weight: var(--bold-font-weight);
 }
 .main__text-sub-titel {
@@ -253,23 +219,7 @@ main {
   object-position: center;
 }
 
-/* .main__section-why .artcile-list {
-  grid-column: span 2;
-} */
-  
-/* .main__section-what .section__title {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-} */
-  
-/* .main__section-what .artcile-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-} */
-
-
-  /*------- 
+/*------- 
     FOOTER 
    -------*/
 
@@ -281,20 +231,15 @@ footer {
 }
 
 .footer__pseudo-h1 {
-  /* height: 375px; */
   justify-self: center;
   align-self: center;
-  /* line-height: normal; */
 }
 
 .footer__pseudo-h1-text {
   text-transform: lowercase;
   text-shadow: 4px 4px 0 var(--accent-color);
-  /* font-family: var(--font-family), Arial, Helvetica, sans-serif; */
   font-weight: var(--bold-font-weight);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  /* line-height: 95px; */
-  /* line-height: var(--small-font-size); */
   color: var(--titel-color);
 }
 
@@ -331,9 +276,6 @@ footer {
     top: 22px;
     right: 82px;
   }
-  /* .header__text {
-    inline-size: 50%;
-  } */
   .main {
     gap: 60px;
   }
@@ -358,30 +300,18 @@ footer {
     gap: 20px;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
-    /* grid-template-rows: 192px 230px 318px; */
-    /* inline-size: 100%;
-    block-size: 100%;
-    object-fit: cover;
-    justify-content: center; */
-  }
-  .images {
-    /* width: auto; */
   }
   .images:nth-child(1) {
     grid-column: span 2;
-    /* grid-row: span; */
   }
   .images:nth-child(2) {
-    /* grid-column: span 2; */
     grid-row: span 2;
   }
   .images:nth-child(3) {
-    /* grid-column: span 2; */
     grid-row: span 2;
   }  
   .images:nth-child(5) {
     grid-column: span 2;
-    /* grid-row: span; */
   }
   .header__titel, .footer__pseudo-h1-text  {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -407,11 +337,6 @@ footer {
   .header__titel {
     line-height: 127px;
   }
-  /* /* .main__section-width-tree-rows {
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 20px;
-  } */
   .main__section-width-tree-rows .artcile-list{
     display: grid;
     gap: 20px;
