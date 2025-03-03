@@ -99,7 +99,7 @@
   gap: 13px;
 }
 
-.header__theme-menu-button{
+.header__theme-menu-button {
   font-size: var(--regular-font-size);
   font-family: inherit;
   color: var(--accent-color);
@@ -186,13 +186,15 @@ main {
   margin-block-end: 10px;
   font-weight: var(--bold-font-weight);
 }
+
 .main__text-sub-titel {
   font-weight: var(--regular-font-weight);
 }
-.main__pseudo-section__title{
+
+.main__pseudo-section__title {
   margin-block-end: 22px;
 }
-
+ 
 .text__link {
   text-decoration: none;
   text-shadow: 1px 1px var(--accent-color);
@@ -292,7 +294,7 @@ footer {
   .main__pseudo-section__title {
     margin-block-end: 20px;
   }
-  .main__section-gallery h2{
+  .main__section-gallery h2 {
     margin-block-end: 20px;
   }
   .gallery__pic {
@@ -312,7 +314,7 @@ footer {
   .images:nth-child(5) {
     grid-column: span 2;
   }
-  .header__titel, .footer__pseudo-h1-text  {
+  .header__titel, .footer__pseudo-h1-text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
@@ -331,18 +333,16 @@ footer {
     align-self: start;
   }
   .header__theme-menu-list {
-    grid-template-columns: repeat(3, min-content)
+    display: flex;
+    grid-template-columns: repeat(3, min-content);
   }
   .header__titel {
     line-height: 127px;
   }
-  .main__section-width-tree-rows .artcile-list{
+  .main__section-width-tree-rows .artcile-list {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-  }
-  .header__theme-menu-list {
-    display: flex;
   }
   .main__section-width-two-columns {
     gap: 10px;
