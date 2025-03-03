@@ -1,1 +1,1 @@
-git@github.com:AnvarZakareev/slozhno-sosredotochitsya-fd.git
+https://github.com/AnvarZakareev/slozhno-sosredotochitsya-fd.git
