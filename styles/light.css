@@ -38,7 +38,7 @@
     --bg-image: url(../images/cover-image-light.png);
     /* ДУБЛИРОВАТЬ ИЗ 
     :root.theme-light { */
-    --bg-color: #000028;
+    --bg-color: #FFF1F7;
     /* COLORS */
     --titel-color: #FFC2E6;
     --text-decor: #353430;
