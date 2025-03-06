@@ -16,19 +16,12 @@
   --text-decor: #353430;
   --accent-color: #FF8DCB;
   --text-color: #353430;
-  --h2-color: #353430;
-  /* FONTS */
-  --font-family: 'IBM Plex Mono';
-  --regular-font-size: 18px;
-  --small-font-size: 15px;
-  --bold-font-weight: 700;
-  --regular-font-weight: 400;
-  --large-line-height: 23px;
+  --article-color: #353430;
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  .header__dark-theam-REC {
+  .header__rec {
     display: none;
   }
 }
@@ -44,13 +37,6 @@
     --text-decor: #353430;
     --accent-color: #FF8DCB;
     --text-color: #353430;
-    --h2-color: #353430;
-    /* FONTS */
-    --font-family: 'IBM Plex Mono';
-    --regular-font-size: 18px;
-    --small-font-size: 15px;
-    --bold-font-weight: 700;
-    --regular-font-weight: 400;
-    --large-line-height: 23px;
+    --article-color: #353430;
   }
 }

@@ -28,7 +28,6 @@
 
 .header {
   padding: 10px;
-  min-height: 100vh;
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -63,7 +62,7 @@
 
 /* Надпись REC в темной теме */
 
-.header__dark-theam-REC {
+.header__rec {
   position: absolute;
   color: var(--accent-color);
   font-size: var(--regular-font-size);
@@ -71,7 +70,7 @@
   right: 71px;
 }
 
-.header__dark-theam-REC::after {
+.header__rec::after {
   content: "";
   position: absolute;
   width: 10px;
@@ -83,8 +82,8 @@
   box-shadow: 0px 0px 2px 2px var(--accent-color);
 }
 
-.header__dark-theam-REC::before {
-  content: "REC";
+.header__rec::before {
+  content: "rec";
   text-transform: uppercase;
   position: absolute;
   font-size: var(--regular-font-size);
@@ -110,34 +109,34 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid currentColor;
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid currentColor;
 }
 
 .header__theme-menu-button:focus {
   outline: none;
-  border-block-end: 2px solid var(--accent-color);
+  border-block-end: 2px solid currentColor;
   margin-block-end: -2px;
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-block-end: 2px solid var(--accent-color);
+  border-block-end: 2px solid currentColor;
   margin-block-end: -2px;
-}
-
-.header__titel-div {
-  justify-self: start;
 }
 
 .header__titel {
   justify-self: start;
+}
+
+.header__titel > h1 {
+  justify-self: start;
   text-transform: lowercase;
   text-shadow: 4px 4px 0 var(--accent-color);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--logo-size);
   line-height: 96px;
   color: var(--titel-color);
 }
@@ -169,7 +168,7 @@ main {
 
 .section__title {
   margin-block-end: 20px;
-  color: var(--h2-color);
+  color: var(--article-color);
   font-size: var(--regular-font-size);
   font-weight: var(--bold-font-weight);
 }
@@ -201,11 +200,11 @@ main {
 }
 
 .text__link:hover {
-  border-inline-end: 1px var(--text-color) solid;
+  border-inline-end: 1px currentColor solid;
 }
 
 .text__link:focus {
-  border: 1px var(--text-color) solid;
+  border: 1px currentColor solid;
 }
 
 .gallery__pic {
@@ -225,22 +224,22 @@ main {
    -------*/
 
 footer {
-  height: 668px;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   display: grid;
   position: relative;
 }
 
-.footer__pseudo-h1 {
+.footer__titel {
   justify-self: center;
   align-self: center;
 }
 
-.footer__pseudo-h1-text {
+.footer__titel > p {
   text-transform: lowercase;
   text-shadow: 4px 4px 0 var(--accent-color);
   font-weight: var(--bold-font-weight);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--logo-size);
   color: var(--titel-color);
 }
 
@@ -254,12 +253,15 @@ footer {
     -------*/
 
 @media (width >= 768px) {
+  :root {
+    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
   .header, .main, .footer {
     padding: 20px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
-  .header__titel-div {
+  .header__titel {
     margin-inline-start: -20px;
   }
   .header__text-div {
@@ -273,19 +275,19 @@ footer {
     top: 20px;
     right: 20px;
   }
-  .header__dark-theam-REC {
+  .header__rec {
     top: 22px;
     right: 82px;
   }
   .main {
     gap: 60px;
   }
-  .main__section-width-two-columns {
+  .main__section {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 2fr;
   }
-  .main__section-width-tree-rows .artcile-list {
+  .main__section-what .artcile-list {
     grid-column: span 2;
   }
   .section__title {
@@ -294,7 +296,7 @@ footer {
   .main__pseudo-section__title {
     margin-block-end: 20px;
   }
-  .main__section-gallery h2 {
+  .gallery h2 {
     margin-block-end: 20px;
   }
   .gallery__pic {
@@ -314,9 +316,6 @@ footer {
   .images:nth-child(5) {
     grid-column: span 2;
   }
-  .header__titel, .footer__pseudo-h1-text {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
 }
 
     /*-------
@@ -324,7 +323,7 @@ footer {
     --------*/
 
 @media (width >= 1024px) {
-  .header__dark-theam-REC {
+  .header__rec {
     top: 20px;
     right: 81px;
   }
@@ -336,16 +335,16 @@ footer {
     display: flex;
     grid-template-columns: repeat(3, min-content);
   }
-  .header__titel {
+  .header__titel > h1 {
     line-height: 127px;
   }
-  .main__section-width-tree-rows .artcile-list {
+  .main__section {
+    gap: 10px;
+  }
+  .main__section-what .artcile-list {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-  }
-  .main__section-width-two-columns {
-    gap: 10px;
   }
   .section__title {
     margin-block-end: 10px;
