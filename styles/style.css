@@ -28,6 +28,7 @@
 
 .header {
   height: 100vh;
+  min-height: 668px;
   padding: 10px;
   position: relative;
   display: grid;
