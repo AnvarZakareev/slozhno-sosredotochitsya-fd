@@ -16,6 +16,8 @@
   --text-decor: #353430;
   --accent-color: #FF8DCB;
   --text-color: #353430;
+  --decor-color: #353430;
+  --decor-color-rgba: 53, 52, 48;
   --article-color: #353430;
 }
 
@@ -37,6 +39,7 @@
     --text-decor: #353430;
     --accent-color: #FF8DCB;
     --text-color: #353430;
+    --decor-color: #353430;
     --article-color: #353430;
   }
 }

@@ -11,6 +11,8 @@
   --text-decor: #000028;
   --accent-color: #FF0070;
   --article-color: #FF0070;
+  --decor-color: #FF0070;
+  --decor-color-rgba: 255, 0, 112;
   --text-color: #F1B2CE;
   /* FONTS */
   --font-family: 'IBM Plex Mono';

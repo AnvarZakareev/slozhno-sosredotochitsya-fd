@@ -8,7 +8,7 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: var(--bg-color);
-  font-family: var(--font-family), Arial, Helvetica, sans-serif;
+  font-family: var(--font-family), "Courier New", Courier, monospace;
 }
 
   /* ----------------
@@ -47,8 +47,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--decor-color);
+  border-block-end: 1px solid var(--decor-color);
 }
 
 .decorated-zone::before {
@@ -58,15 +58,15 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--decor-color);
+  border-block-start: 1px solid var(--decor-color);
 }
 
 /* Надпись REC в темной теме */
 
 .header__rec {
   position: absolute;
-  color: var(--accent-color);
+  color: var(--decor-color);
   font-size: var(--regular-font-size);
   top: 10px;
   right: 71px;
@@ -77,11 +77,11 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: var(--accent-color);
+  background-color: var(--decor-color);
   margin-block-start: 8px;
   margin-inline-start: 42px;
   border-radius: 50%;
-  box-shadow: 0px 0px 2px 2px var(--accent-color);
+  box-shadow: 0px 0px 2px 2px var(--decor-color);
 }
 
 .header__rec::before {
@@ -103,7 +103,7 @@
 .header__theme-menu-button {
   font-size: var(--regular-font-size);
   font-family: inherit;
-  color: var(--accent-color);
+  color: var(--decor-color);
   padding: 0px 11px 0px 11px;
   border: none;
   background-color: transparent;
@@ -115,7 +115,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid currentColor;
+  outline: 1px solid rgba(var(--decor-color-rgba), 0.4);
 }
 
 .header__theme-menu-button:focus {
@@ -202,11 +202,11 @@ main {
 }
 
 .text__link:hover {
-  border-inline-end: 1px currentColor solid;
+  border-bottom: 1px solid currentColor;
 }
 
 .text__link:focus {
-  border: 1px currentColor solid;
+  outline: 1px currentColor solid;
 }
 
 .gallery__pic {
