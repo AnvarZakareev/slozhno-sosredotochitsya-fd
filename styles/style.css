@@ -163,6 +163,10 @@ main {
   margin-inline-end: 10px;
 }
 
+p {
+  margin-block-end: 20px;
+}
+
 .section {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -176,7 +180,6 @@ main {
 }
 
 .article__text {
-  margin-block-end: 20px;
   color: var(--text-color);
   font-size: var(--regular-font-size);
   font-weight: var(--regular-font-weight);
