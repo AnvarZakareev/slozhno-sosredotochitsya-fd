@@ -98,6 +98,7 @@
 .header__theme-menu-list {
   display: grid;
   gap: 13px;
+  margin-block-start: -4px;
 }
 
 .header__theme-menu-button {
@@ -156,14 +157,14 @@
 
 main {
   display: grid;
-  gap: 30px;
+  gap: 29px;
   margin-block-start: 40px;
   margin-block-end: 40px;
   margin-inline-start: 10px;
   margin-inline-end: 10px;
 }
 
-p {
+.main p {
   margin-block-end: 20px;
 }
 
@@ -196,7 +197,7 @@ p {
 }
 
 .pseudo-question__title {
-  margin-block-end: 22px;
+  margin-block-end: 20px;
 }
  
 .text__link {
@@ -272,6 +273,16 @@ footer {
   .header__text {
     max-width: calc(100vw / 2 - 20px);
   }
+  .header__theme-menu {
+    margin-inline-end: 3px;
+    /* margin-block-end: 7px; */
+  }
+
+  .header__theme-menu-list {
+    gap: 12px;
+    margin-block-start: -7px;
+  }
+
   .decorated-zone::after {
     bottom: 20px;
     left: 20px;
@@ -281,11 +292,11 @@ footer {
     right: 20px;
   }
   .header__rec {
-    top: 22px;
-    right: 82px;
+    top: 20px;
+    right: 81px;
   }
   .main {
-    gap: 60px;
+    gap: 59px;
   }
   .question {
     display: grid;
@@ -335,16 +346,18 @@ footer {
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+    margin-block-start: 6px;
   }
   .header__theme-menu-list {
     display: flex;
-    grid-template-columns: repeat(3, min-content);
+    /* grid-template-columns: repeat(3, min-content); */
+    gap: 15px;
   }
   .header__titel > h1 {
     line-height: 127px;
   }
   .question {
-    gap: 10px;
+    gap: 11px;
   }
   .question-what .artcile-list {
     display: grid;

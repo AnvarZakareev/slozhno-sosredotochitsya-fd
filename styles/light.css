@@ -22,7 +22,6 @@
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
   .header__rec {
     display: none;
   }
@@ -31,8 +30,6 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(../images/cover-image-light.png);
-    /* ДУБЛИРОВАТЬ ИЗ 
-    :root.theme-light { */
     --bg-color: #FFF1F7;
     /* COLORS */
     --titel-color: #FFC2E6;
@@ -40,6 +37,12 @@
     --accent-color: #FF8DCB;
     --text-color: #353430;
     --decor-color: #353430;
+    --decor-color-rgba: 53, 52, 48;
     --article-color: #353430;
+  }
+  .theme-auto .page {
+    .header__rec {
+      display: none;
+    }
   }
 }
