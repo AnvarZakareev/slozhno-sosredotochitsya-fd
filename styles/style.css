@@ -99,7 +99,6 @@
 .header__theme-menu-list {
   display: grid;
   gap: 12px;
-  /* margin-block-start: -2px; */
 }
 
 .header__theme-menu-button {
@@ -110,7 +109,6 @@
   border: none;
   background-color: transparent;
   text-transform: lowercase;
-  /* line-height: 23.4px; */
 }
 
 .header__theme-menu-button_active {
@@ -186,7 +184,6 @@ main {
   color: var(--text-color);
   font-size: var(--regular-font-size);
   font-weight: var(--regular-font-weight);
-  /* line-height: 23.4px; */
 }
 
 .question__text-titel {
@@ -356,7 +353,6 @@ footer {
   }
   .header__theme-menu-list {
     display: flex;
-    /* grid-template-columns: repeat(3, min-content); */
     gap: 13px;
     margin-block-start: -6px;
   }
