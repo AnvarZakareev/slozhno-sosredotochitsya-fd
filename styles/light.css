@@ -40,9 +40,9 @@
     --decor-color-rgba: 53, 52, 48;
     --article-color: #353430;
   }
-  .theme-auto .page {
+  
     .header__rec {
       display: none;
-    }
+    
   }
 }
