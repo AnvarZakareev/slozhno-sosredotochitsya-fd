@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-color: var(--bg-color);
   font-family: var(--font-family), "Courier New", Courier, monospace;
+  line-height: 23.4px;
 }
 
   /* ----------------
@@ -92,27 +93,28 @@
 }
 
 .header__theme-menu {
-  margin-inline-end: 3px;
+  margin-inline-end: 1px;
 }
 
 .header__theme-menu-list {
   display: grid;
-  gap: 13px;
-  margin-block-start: -4px;
+  gap: 12px;
+  /* margin-block-start: -2px; */
 }
 
 .header__theme-menu-button {
   font-size: var(--regular-font-size);
   font-family: inherit;
   color: var(--decor-color);
-  padding: 0px 11px 0px 11px;
+  padding: 0px 12px 0px 12px;
   border: none;
   background-color: transparent;
   text-transform: lowercase;
+  /* line-height: 23.4px; */
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid currentColor;
+  outline: 2px solid currentColor;
 }
 
 .header__theme-menu-button:hover {
@@ -121,14 +123,14 @@
 
 .header__theme-menu-button:focus {
   outline: none;
-  border-block-end: 2px solid currentColor;
-  margin-block-end: -2px;
+  border-block-end: 1px solid currentColor;
+  margin-block-end: -1px;
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-block-end: 2px solid currentColor;
-  margin-block-end: -2px;
+  border-block-end: 1px solid currentColor;
+  margin-block-end: -1px;
 }
 
 .header__titel {
@@ -157,7 +159,7 @@
 
 main {
   display: grid;
-  gap: 29px;
+  gap: 29.5px;
   margin-block-start: 40px;
   margin-block-end: 40px;
   margin-inline-start: 10px;
@@ -184,7 +186,7 @@ main {
   color: var(--text-color);
   font-size: var(--regular-font-size);
   font-weight: var(--regular-font-weight);
-  line-height: 23.4px;
+  /* line-height: 23.4px; */
 }
 
 .question__text-titel {
@@ -197,7 +199,7 @@ main {
 }
 
 .pseudo-question__title {
-  margin-block-end: 20px;
+  margin-block-end: 19px;
 }
  
 .text__link {
@@ -239,6 +241,7 @@ footer {
 .footer__titel {
   justify-self: center;
   align-self: center;
+  margin-block-start: 5px;
 }
 
 .footer__titel > p {
@@ -310,7 +313,7 @@ footer {
     margin-block-end: 0px;
   }
   .pseudo-question__title {
-    margin-block-end: 20px;
+    margin-block-end: 19px;
   }
   .gallery h2 {
     margin-block-end: 20px;
