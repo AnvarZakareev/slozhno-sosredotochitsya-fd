@@ -26,6 +26,10 @@
   .header__rec {
     display: none;
   }
+
+  .theme-auto .header__rec {
+      display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
