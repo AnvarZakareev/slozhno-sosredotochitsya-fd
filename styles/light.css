@@ -46,12 +46,6 @@
     --article-color: #353430;
   }
 
-  .theme-light .page {
-    .header__rec {
-      display: none;
-    }
-  }
-
   .theme-auto .header__rec {
       display: none;
   }
