@@ -20,11 +20,3 @@
   --decor-color-rgba: 255, 0, 112;
   --text-color: #F1B2CE;
 }
-
-.theme-dark .page {
-  .page {
-    .header__rec {
-      display: contents;
-    }
-  }
-}

@@ -112,7 +112,7 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 2px solid currentColor;
+  outline: 1px solid currentColor;
 }
 
 .header__theme-menu-button:hover {
@@ -275,12 +275,11 @@ footer {
   }
   .header__theme-menu {
     margin-inline-end: 2px;
-    /* margin-block-end: 7px; */
+    margin-block-end: 4px;
   }
 
   .header__theme-menu-list {
-    gap: 11px;
-    margin-block-start: -5px;
+    gap: 12px;
   }
 
   .decorated-zone::after {
@@ -349,12 +348,10 @@ footer {
   .header__theme-menu {
     justify-self: center;
     align-self: start;
-    margin-block-start: 6px;
   }
   .header__theme-menu-list {
     display: flex;
     gap: 13px;
-    margin-block-start: -6px;
   }
   .header__titel > h1 {
     line-height: 127px;
