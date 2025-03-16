@@ -21,10 +21,6 @@
   --text-color: #F1B2CE;
 }
 
-.theme-dark .page {
-  .page {
-    .header__rec {
-      display: contents;
-    }
-  }
+.theme-auto .header__rec {
+  display: contents;
 }
