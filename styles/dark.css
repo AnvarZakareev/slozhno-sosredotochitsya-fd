@@ -21,8 +21,8 @@
   --text-color: #F1B2CE;
 }
 
-.theme-auto .page {
+/* .theme-auto .page {
   .header__rec {
-    display: contents;
+    display: none;
   }
-}
+} */
