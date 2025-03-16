@@ -21,6 +21,8 @@
   --text-color: #F1B2CE;
 }
 
-.theme-auto .header__rec {
-  display: contents;
+.theme-auto .page {
+  .header__rec {
+    display: contents;
+  }
 }
