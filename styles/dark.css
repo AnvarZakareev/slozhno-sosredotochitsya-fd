@@ -22,7 +22,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .theme-auto .header__rec {
+  .theme-light .header__rec {
     display: none;
   }
 }
